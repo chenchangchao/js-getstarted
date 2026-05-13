@@ -2,6 +2,19 @@
 
 ## JS Data Structure and Algorithm
 
+###  this的指向问题
+
+
+
+| 调用方式 | 示例 | this指向 |
+|:------|:-------:|------:|
+| 通过new调用 | new Foo() | 新对象 |
+| 直接调用 | method() | 全局对象 |
+| 通过对象调用 | obj.method() | 前面的对象 |
+| 通过call/apply调用 | method.call(ctx) | 第一个参数ctx 
+| 通过bind调用 | method.bind(ctx) | 第一个参数ctx
+| 通过DOM事件调用 | element.addEventListener('click', method) | 事件目标element
+
 ## JS animation
 ```bash
 npm i animejs
