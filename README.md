@@ -2,6 +2,12 @@
 
 ## JS Data Structure and Algorithm
 
+## JS animation
+```bash
+npm i animejs
+npm install gsap
+npm install motion
+```
 
 ## git operation
 ```bash
