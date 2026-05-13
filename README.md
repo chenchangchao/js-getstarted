@@ -13,4 +13,14 @@ git config --list --global
 ssh-keygen -t rsa -C "648023262@qq.com" // 生成ssh key
 cat ~/.ssh/id_rsa.pub // 查看ssh key
 ssh  -T git@github.com // ssh验证
+git status // 检查本地 Git 状态
+git add .  //将所有文件添加到 Git 暂存区
+git commit -m "初始化项目，完成 js-getstarted 基础开发" //提交暂存区文件到本地仓库
+git remote add origin git@github.com:chenchangchao/js-getstarted.git //关联远程仓库
+git remote -v  //验证远程仓库关联是否成功 
+# 首次推送建议加 -u，绑定本地 main 分支与远程 main 分支（后续推送可直接 git push）
+git push -u origin main  //
+git add .  # 标记冲突已解决
+git rebase --continue  # 继续完成变基
+git push -u origin main //重新推送本地分支
 ```
