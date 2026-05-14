@@ -43,3 +43,15 @@ git add .  # 标记冲突已解决
 git rebase --continue  # 继续完成变基
 git push -u origin main //重新推送本地分支
 ```
+- tsc operation
+```bash
+- tsc -v
+- ./node_modules/.bin/tsc -v
+- ./node_modules/.bin/tsc --init # create tsconfwig.json
+- package.json的test在win系统跟*ux系统有所差异,
+- win系统:"test": "set NODE_ENV=test && set PORT=7788 && jest",
+- *ux系统:"test": "NODE_ENV=test PORT=7788 jest"  
+
+-  pnpm run  test
+-  pnpm run  test:watch
+```
