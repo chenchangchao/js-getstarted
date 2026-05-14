@@ -9,6 +9,17 @@ newFn(); //{name:'newFn'}
 const newFn2 = fn.bind(1);
 newFn2();//1
 new newFn2(); 
+
+function checkThis(){
+    console.log(this);
+}
+console.log(checkThis.name);
+checkThis();
+checkThis.call();
+checkThis.call({a:1});   
+checkThis.apply();
+checkThis.bind();
+
 //this的指向不确定，取决于调用时的环境
 //在全局作用域中，this指向window对象
 //在模块作用域中，this指向module.exports对象
